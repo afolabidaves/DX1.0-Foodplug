@@ -1,0 +1,36 @@
+@media screen and (max-width:851px) {
+
+    /* ====header banner section starts here==== */
+    .nav-desktop{
+        display: none;       
+    }.nav-mobile{
+        display: flex;
+    }
+    /* ====header banner section ends here==== */
+
+    /* ====header banner section starts here==== */
+    .banner-content-container{
+        padding-top: 95px;
+    }
+
+    .banner-text-container{
+        width: 100%;
+    }
+    /* ====header banner section ends here==== */
+    /* ====header ABOUT US section STARTS here==== */
+    
+    .about-us-container {
+        justify-content: center;
+    }
+    .about-us-cards-img {
+        min-width: 350px;
+        height: 285px;
+    }
+    .about-us-cards-text {
+        width: 90%;
+        margin: 20px 0;
+    }
+    /* ====header ABOUT US section ends here==== */
+
+}
+
