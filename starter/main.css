@@ -263,8 +263,6 @@ nav-brand span {
 }
 /* <!-- About us section ends here --> */
 
-
-
 /* <!-- About us section 2 starts here --> */
 
 .text-icon {
@@ -277,3 +275,38 @@ nav-brand span {
 }
 
 /* <!-- About us section 2 ends here --> */
+
+/* <!-- wave botton section starts here --> */
+.wave-button-holder {
+  background: var(--gray-gradient), url(./img/about3.jpg);
+  display: flex;
+  background-size: cover;
+  background-position: bottom right;
+  padding: 30px 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wave-button-holder h2 {
+  color: var(--main-color);
+}
+.wave-button-holder p {
+  margin: 20px 0;
+}
+.btn-wave {
+  border: 2px solid var(--white-color);
+  background: var(--main-color);
+  justify-content: center;
+  height: 60px;
+  color: var(--white-color);
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  font-size: 30px;
+
+  animation: ripple 2s infinite;
+}
+/* <!-- wave botton section ends here --> */
