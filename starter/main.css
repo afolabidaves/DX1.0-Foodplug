@@ -42,7 +42,7 @@ header {
 
 .btn-light {
   background: var(--white-color);
-  border: 2px solid var(--main-color-dark);
+  border: 2px solid var(--main-color);
 }
 
 .btn-light:hover {
@@ -77,6 +77,13 @@ header {
 .desktoplink-container ul li {
   padding: 15px 20px;
   border: 2px solid transparent;
+  color: var(--main-color);
+}
+
+.desktoplink-container ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
   color: var(--main-color);
 }
 .desktoplink-container li:hover {
@@ -116,11 +123,11 @@ nav-brand span {
   border: 2px solid var(--white-color);
 }
 .hamburger-container {
-  /* border: 3px solid var(--white-color); */
   width: 30px;
-  height: 50px;
+  height: 30px;
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 /* ======= */
 .menu {
@@ -132,16 +139,15 @@ nav-brand span {
 
 .menu::before {
   content: "";
-  background: tomato;
+  background: var(--white-color);
   width: 100%;
   height: 3px;
   position: absolute;
-
   transform: translateY(-10px);
 }
 .menu::after {
   content: "";
-  background: black;
+  background: var(--white-color);
   width: 100%;
   height: 3px;
   position: absolute;
@@ -151,25 +157,37 @@ nav-brand span {
 .showburger .menu {
   background: transparent;
 }
+
 .showburger .menu::before {
   transform: rotate(45deg);
+  background: var(--main-color);
 }
 
 .showburger .menu::after {
   transform: rotate(-45deg);
+  background: var(--main-color);
 }
 /* ======== */
 
 .mobile-links-container {
+  /* display: none; */
+  transition: all 0.4s ease;
+  transform: translateX(102%);
   width: 50%;
   height: 100%;
   background: var(--main-color);
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 3;
 }
 
-.mobile-links-content ul{
+.showmobilelink {
+  transform: translateX(0);
+  /* display: block; */
+}
+
+.mobile-links-content ul {
   list-style: none;
 }
 
@@ -177,9 +195,9 @@ nav-brand span {
   display: block;
   text-decoration: none;
   color: var(--white-color);
-  padding: 10px 20px;
+  padding: 25px 20px;
 }
-.mobile-links-content a:hover{
+.mobile-links-content a:hover {
   background: var(--white-color);
   color: var(--main-color);
 }
@@ -191,15 +209,13 @@ nav-brand span {
   background: transparent;
 }
 
-.mobile-links-content .active-link{
+.mobile-links-content .active-link {
   background: var(--white-color);
   color: var(--main-color);
 }
 /* ====header banner section starts here==== */
 
 .header-banner-section {
-  /* border: 3px solid black; */
-  /* height: 450px; */
   background: url(./img/banner.jpg);
   background-size: cover;
 }
