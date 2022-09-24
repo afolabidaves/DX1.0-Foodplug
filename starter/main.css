@@ -560,7 +560,7 @@ footer button:hover {
   border-radius: 50%;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
   border: 2px solid var(--main-color);
   align-items: center;
   height: 50px;
@@ -569,7 +569,7 @@ footer button:hover {
   transition: all 0.9s ease;
 }
 
-.footer-icon-container a{
+.footer-icon-container a {
   text-decoration: none;
   color: var(--white-color);
 }
